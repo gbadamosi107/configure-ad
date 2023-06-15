@@ -77,10 +77,10 @@ To create Admin and Normal User accounts within Active Directory, we will open A
 
 <h3>Step 5: Join the Client VM to the Domain Controller VM</h3><br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1S1nfFF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the Azure Portal, we will change Client-1's DNS settings to DC-1's Private IP address. Once you do that, restart Client-1 from within the Azure portal. The picture below shows verification that client-1 is using DC-1's DNS. Next, log in to Client -1 VM as the original local admin, using the username mydomain.com\please (note that "please" can be substituted with any user name you choose for Client-1). The computer will restart and Client-1 will be a part of mydomain.com. Next, create a new OU named "_CLIENTS," (refer to Step 4 for instructions) and drag Client-1 into the OU.
+From the Azure Portal, we will change Client-1's DNS settings to DC-1's Private IP address. Once you do that, restart Client-1 from within the Azure portal. The picture below shows verification that client-1 is using DC-1's DNS. Next, log in to Client -1 VM as the original local admin, using the username mydomain.com\please (note that "please" can be substituted with any user name you choose for Client-1). The computer will restart and Client-1 will be a part of mydomain.com. Then, create a new OU named "_CLIENTS," (refer to Step 4 for instructions) and drag Client-1 into the OU.
 </p>
 <br />
 
