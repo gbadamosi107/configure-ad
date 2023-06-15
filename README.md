@@ -95,10 +95,15 @@ Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open syste
 
 <h3>Step 7: Create additional users and log in to the Client VM with one of the users</h3><br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img src="https://i.imgur.com/EXWOO9F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p><br>
+
 <p>
-Last, to verify that normal users can log in to Client-1, we will use a script to generate thousands of users. Next, log in to DC-1 as jane_admin. Open PowerShell_ise as an administrator and input the script into it. We will select one of the users from the script and log in to Client-1 with his credentials, as a normal user.
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p><br>
+
+<p>
+Last, to verify that normal users can log in to Client-1, we will use a script to generate thousands of users. Next, log in to DC-1 as jane_admin. Open PowerShell_ise as an administrator and input the script. We will select one of the users from the script and log in to Client-1 with his credentials, as a normal user.
 </p>
 <br />
 
