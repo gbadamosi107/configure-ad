@@ -99,11 +99,11 @@ Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open syste
 </p><br>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nSVGIGb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p><br>
 
 <p>
-Last, to verify that normal users can log in to Client-1, we will use a script to generate thousands of users. Next, log in to DC-1 as jane_admin. Open PowerShell_ise as an administrator and input the script. We will select one of the users from the script and log in to Client-1 with his credentials, as a normal user.
+Last, to verify that normal users can log in to Client-1, we will use a script to generate thousands of users. Next, log in to DC-1 as jane_admin. Open PowerShell_ISE as an administrator and input the script. We will select one of the users from the script and log in to Client-1, as a normal user, using his credentials.
 </p>
 <br />
 
