@@ -49,7 +49,7 @@ In this lab, we will create two VMs in the same VNET. One will be a Domain Contr
 </p>
 
 <p>
-<img src="https://i.imgur.com/NhJ8AVW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CeExnCC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -59,16 +59,16 @@ To ensure connectivity between the two VMs, first we will log in to DC-1 and ena
 
 <h3>Step 3: Install Active Directory (AD)</h3><br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TvX0sSb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On DC-1 we will install Active Directory Domain Services and promote it to a domain controller by setting up a new forest and naming it "mydomain.com." Then restart the VM and log in to DC-1 as "mydomain.com\trust" (note that "trust" can be substituted with any username assigned to DC-1.
+On DC-1 we will install Active Directory Domain Services and promote it to a domain controller by setting up a new forest and naming it "mydomain.com." Then restart the VM and log in to DC-1 as "mydomain.com\trust" (note that "trust" can be substituted with any username assigned to DC-1).
 </p>
 <br />
 
 <h3>Step 4: Create an Admin and Normal User Account in AD</h3><br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QHdvVq3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 To create Admin and Normal User accounts within Active Directory, we will open Active Directory Users and Computers (ADUC) from the Windows Start menu . Within ADUC, we will create Organizational Units (OU), which are the user accounts. The OU for Admins will be named "_ADMINS;" the OU for Normal Users will be named, "_EMPLOYEES." To create the OU for Normal Users, right click on mydomain.com, click new, then click "Organizational Unit," and name it "_EMPLOYEES." To create the OU for Admins, right click on mydomain.com, click new, then click "Organizational Unit," and name it "_ADMINS." Then we will create a new employee, named "Jane Doe," and assign her the username, "jane_admin." Jane is an Admin, so we will add her to the "Domain Admins" Security Group. Henceforth, we will use jane_admin as the admin account.
