@@ -24,10 +24,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Create the Domain Controller VM and Client VM in Azure
+- Step 2: Ensure Connectivity between the Client and Domain Controller
+- Step 3: Install Active Directory (AD)
+- Step 4: Create an Admin and Normal User Account in AD
+- Step 5: Join Client VM to the Domain Controller VM
+- Step 6: Setup Remote Desktop for non-administrative users on the Client VM
+- Step 7: Create additional users and log in to the Client VM with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
 
