@@ -53,7 +53,7 @@ In this lab, we will create two VMs in the same VNET. One will be a Domain Contr
 </p>
 
 <p>
-To ensure connectivity between the two VMs, first we will log in to DC-1 and enable ICMPv4 on the local windows firewall. Then we will ping DC-1's private IP address from Client-1 and assess that the ping is successful.
+To ensure connectivity between the two VMs, first log in to DC-1 and enable ICMPv4 on the local windows firewall. Then ping DC-1's private IP address from Client-1 and assess that the ping is successful.
 </p>
 <br />
 
@@ -62,7 +62,7 @@ To ensure connectivity between the two VMs, first we will log in to DC-1 and ena
 <img src="https://i.imgur.com/TvX0sSb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On DC-1 we will install Active Directory Domain Services and promote it to a domain controller by setting up a new forest and naming it "mydomain.com." Then we will restart the VM and log in to DC-1 as "mydomain.com\trust" (note that "trust" can be substituted with any username assigned to DC-1).
+On DC-1 install Active Directory Domain Services and promote it to a domain controller by setting up a new forest and naming it "mydomain.com." Then restart the DC-1 VM and log in as "mydomain.com\trust" (note that "trust" can be substituted with any username assigned to DC-1).
 </p>
 <br />
 
@@ -71,7 +71,7 @@ On DC-1 we will install Active Directory Domain Services and promote it to a dom
 <img src="https://i.imgur.com/QHdvVq3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To create Admin and Normal User accounts within Active Directory, we will open Active Directory Users and Computers (ADUC) from the Windows Start menu . Within ADUC, we will create Organizational Units (OU), which are the user accounts. The OU for Admins will be named "_ADMINS;" the OU for Normal Users will be named "_EMPLOYEES." To create the OU for Normal Users, right click on mydomain.com, click new, then click "Organizational Unit," and name it "_EMPLOYEES." To create the OU for Admins, right click on mydomain.com, click new, then click "Organizational Unit," and name it "_ADMINS." We will then create a new employee, named "Jane Doe," and assign her the username, "jane_admin." Jane is an Admin, so we will add her to the "Domain Admins" Security Group. Henceforth, we will use jane_admin as the admin account.
+To create Admin and Normal User accounts within Active Directory, open Active Directory Users and Computers (ADUC) from the Windows Start menu . Within ADUC, create Organizational Units (OU), also known as the user accounts. The OU for Admins will be named "_ADMINS;" the OU for Normal Users will be named "_EMPLOYEES." To create the OU for Normal Users, right click on mydomain.com, click new, click "Organizational Unit," and name it "_EMPLOYEES." To create the OU for Admins, right click on mydomain.com, click new, click "Organizational Unit," and name it "_ADMINS." Then create a new employee, named "Jane Doe," and assign her the username, "jane_admin." Jane is an Admin, so we will add her to the "Domain Admins" Security Group. Henceforth, we will use jane_admin as the admin account.
 </p>
 <br />
 
@@ -80,7 +80,7 @@ To create Admin and Normal User accounts within Active Directory, we will open A
 <img src="https://i.imgur.com/M75vue2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the Azure Portal, we will change Client-1's DNS settings to DC-1's Private IP address. Once you do that, restart Client-1 from within the Azure portal. The picture below shows verification that client-1 is using DC-1's DNS. Next, log in to Client -1 VM as the original local admin, using the username mydomain.com\please (note that "please" can be substituted with any user name you choose for Client-1). Then right click on the Windows Start icon, navigate to Systems, click "Rename this PC (advanced)," click "Change," click "Domain" and name it "mydomain.com." Enter the credentials for jane_admin.  The computer will restart and Client-1 will now be a part of mydomain.com. 
+From the Azure Portal, change Client-1's DNS settings to DC-1's Private IP address. Once this is done, restart Client-1 from within the Azure portal. The picture shows verification that Client-1 is using DC-1's DNS. Next, log in to Client-1 VM as the original local admin, using the username mydomain.com\please (note that "please" can be substituted with any user name assigned to Client-1). Next, right click on the Windows Start icon, navigate to Systems, click "Rename this PC (advanced)," click "Change," click "Domain" and name it "mydomain.com." Enter the credentials for jane_admin.  The computer will restart and Client-1 will now be a part of mydomain.com. 
 </p>
 <br />
 
@@ -89,7 +89,7 @@ From the Azure Portal, we will change Client-1's DNS settings to DC-1's Private 
 <img src="https://i.imgur.com/KtDr8a0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open system poperties. Click "Remote Desktop," allow "domain users" access to remote desktop. You will now be able to log in to Client-1 as a normal, non-administrative user (this would normally be done with Group Policy, which allows you to change many systems at once).
+Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open system poperties. Click "Remote Desktop," allow "domain users" access to remote desktop. We will now be able to log in to Client-1 as a normal, non-administrative user (this would normally be done with Group Policy, which allows you to change many systems at once).
 </p>
 <br />
 
@@ -103,7 +103,7 @@ Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open syste
 </p><br>
 
 <p>
-Last, to verify that normal users can log in to Client-1, we will use a script to generate thousands of users. Next, log in to DC-1 as jane_admin. Open PowerShell_ISE as an administrator and input the script. We will select one of the users from the script and log in to Client-1, as a normal user, using his credentials.
+Last, to verify that normal users can log in to Client-1, we will use a script to generate thousands of users. Next, log in to DC-1 as jane_admin. Open PowerShell_ISE as an administrator and input the script. Select one of the users from the script and log in to Client-1, as a normal user, using his credentials.
 </p>
 <br />
 
