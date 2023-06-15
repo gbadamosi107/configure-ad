@@ -32,8 +32,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 6: Setup Remote Desktop for non-administrative users on the Client VM
 - Step 7: Create additional users and log in to the Client VM with one of the users
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Deployment and Configuration Steps</h2><br>
 
+<h3>Step 1: Create the Domain Controller VM and Client VM in Azure</h3><br>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
