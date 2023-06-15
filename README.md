@@ -39,7 +39,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/FaIVHWj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this lab, we will create two VMs in the same VNET. One will be a Domain Controller (DC-1), and the other will be a Client VM (Client-1). We will set the Domain Controller's NIC Private IP Address to be static because it is providing Active Directory services to the Client VM. We will place both VMs in the same Vnet.
+In this lab, we will create two VMs in the same VNET. One will be a Domain Controller (DC-1), and the other will be a Client VM (Client-1). We will set the Domain Controller's NIC Private IP Address to static because it is providing Active Directory services to the Client VM. We will place both VMs in the same Vnet.
 </p>
 <br />
 
