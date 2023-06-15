@@ -62,7 +62,7 @@ To ensure connectivity between the two VMs, first we will log in to DC-1 and ena
 <img src="https://i.imgur.com/TvX0sSb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On DC-1 we will install Active Directory Domain Services and promote it to a domain controller by setting up a new forest and naming it "mydomain.com." Then restart the VM and log in to DC-1 as "mydomain.com\trust" (note that "trust" can be substituted with any username assigned to DC-1).
+On DC-1 we will install Active Directory Domain Services and promote it to a domain controller by setting up a new forest and naming it "mydomain.com." Then we will restart the VM and log in to DC-1 as "mydomain.com\trust" (note that "trust" can be substituted with any username assigned to DC-1).
 </p>
 <br />
 
