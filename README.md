@@ -45,8 +45,13 @@ In this lab, we will create two VMs in the same VNET. One will be a Domain Contr
 
 <h3>Step 2: Ensure Connectivity between the Client and Domain Controller</h3><br>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/45A21Ub.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+<img src="https://i.imgur.com/NhJ8AVW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
 <p>
 To ensure connectivity between the two VMs, first we will log in to DC-1 and enable ICMPv4 on the local windows firewall. Then we will ping DC-1's private IP address from Client-1 and assess that the ping is successful.
 </p>
