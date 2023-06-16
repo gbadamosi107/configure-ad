@@ -89,7 +89,7 @@ From the Azure Portal, change Client-1's DNS settings to DC-1's Private IP addre
 <img src="https://i.imgur.com/KtDr8a0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open system properties. Click "Remote Desktop," allow "domain users" access to remote desktop. We will now be able to log in to Client-1 as a normal, non-administrative user (this would normally be done with Group Policy, which allows you to change many systems at once).
+Log in to Client-1 as an admin (we will use mydomain.com\jane_admin). Open system properties. Click "Remote Desktop," and allow "domain users" access to remote desktop. We will now be able to log in to Client-1 as a normal, non-administrative user (this would normally be done with Group Policy, which allows you to change many systems at once).
 </p>
 <br />
 
